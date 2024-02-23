@@ -63,7 +63,7 @@
         </div>
 
         <div class="text-center" style="vertical-align: middle; margin-top:-10px">
-            <a href="index.php" style="position:relative;">
+            <a href="index.php?page=home" style="position:relative;">
               <i class="fa fa-arrow-circle-o-left fa-2x" style="position:relative; top: 5px;"></i> 
               <span>Kembali ke halaman utama</span>
             </a>

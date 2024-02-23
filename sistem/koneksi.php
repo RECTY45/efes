@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-$koneksi = mysqli_connect('localhost', 'root', '', 'print');
+$koneksi = mysqli_connect('localhost', 'u527366907_efes', 'BintangFery123$$', 'u527366907_db_efes');
 if (!$koneksi) {
     echo 'Koneksi ke database gagal!';
 }
