@@ -36,22 +36,8 @@
           <li class="<?= @$produk_active ?>"><a href="index.php?page=produk">Produk</a></li>
           <li class="<?= @$tentang_active ?>"><a href="index.php?page=tentang">Tentang</a></li>
           <li class="<?= @$kontak_active ?>"><a href="index.php?page=kontak">Kontak</a></li>
-          <?php if (@$_SESSION['login'] && $_SESSION['level'] == 'user'): ?>
-            <li class="<?= @$profil_active ?>">
-              <a href="javascript:void(0)" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Profil &nbsp; <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                <li><a href="index.php?page=profil"><?= $_SESSION['nama'] ?></a></li>
-                <li><a href="index.php?page=riwayat">Riwayat Pesanan</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="sistem/logout.php">Logout</a></li>
-              </ul>
-            </li>
             <li class="<?= @$keranjang_active ?>"><a href="index.php?page=keranjang">Keranjang (<?= $_SESSION['jml_keranjang'] ?>)</a></li>
-          <?php elseif (!@$_SESSION['login']): ?>
             <li class="<?= @$login_active ?>"><a href="login.php">Login</a></li>
-          <?php endif; ?>
         </ul>
       </div>
       <!--/.navbar-collapse -->

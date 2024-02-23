@@ -81,33 +81,7 @@ $metode = mysqli_query($koneksi, "SELECT id_ongkir, harga, metode FROM ongkir WH
                         </div>
                         <!-- <div class="panel-body">
                             <h4>Alamat Pengiriman</h4>
-                            <dd><?= $pengiriman['alamat'] ?></dd>
-                            <hr>
-
-                            <h4>Metode Pengiriman</h4>
-                            <div class="list-group">
-                                <div class="list-group-item">
-                                    <input type="radio" name="metode" value="pick_up" id="pickup" class="pay-method" data-harga="0"> 
-                                    <label for="pickup">Pick Up </label> <span class="text-right txt-bold pull-right" style="text-align: right; color: #333 !important;">Rp. 0 (FREE)</span>
-                                </div>
-                                <div class="list-group-item">
-                                    <input type="radio" name="metode" value="jne_reg" id="jnereg" class="pay-method" data-harga="9000"> 
-                                    <label for="jnereg">JNE REG </label> <span class="text-right txt-bold pull-right" style="text-align: right; color: #333 !important;">Rp. 9.000</span>
-                                </div>
-                                <div class="list-group-item">
-                                    <input type="radio" name="metode" value="jne_yes" id="jneyes" class="pay-method" data-harga="18000"> 
-                                    <label for="jneyes">JNE YES </label> <span class="text-right txt-bold pull-right" style="text-align: right; color: #333 !important;">Rp. 18.000</span>
-                                </div>
-                            </div>
-                        </div> -->
-                    </div>
-
-                    <div class="section-header">
-                        <h4 class="section-heading text-left txt-bold">Detail Pesanan</h4>
-                    </div>
-                    <div class="panel">
-                        <div class="panel-body">
-                            <div class="list-group kat-list">
+                            <dd><?= $pengiriman['alamat'] ?>
                                 <?php while ($p = mysqli_fetch_assoc($query)): $ptotal = $p['jml_pesan'] * $p['harga']; ?>
                                     <div class="produk-desc list-group-item">
                                         <div class="row">
